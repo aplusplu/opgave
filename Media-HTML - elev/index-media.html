@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style-media.css" />
+    <title>Media</title>
+  </head>
+  <body id="top">
+    <!-- EKSEMPEL 1 -->
+    <section id="sec-1" class="ex-1">
+      <h1>
+        Video - Media - Local
+        <a href="#sec-4">&#9650; prew</a>
+        <a href="#sec-2">&#9660; next</a>
+      </h1>
+
+  <!-- =====VIDEO MED CONTROL===== -->
+   <video width="967" height="544" controls autoplay muted>
+    <source src="./media/Star-Wars.webm" type="video/webm">
+    <source src="./media/StarWars.mp4" type="video/mp4">
+    Your Browser does not support the video tag.
+
+
+   </video>
+
+
+	<!-- SLUT -->
+
+    </section>
+
+    <!-- EKSEMPEL 2 -->
+    <section id="sec-2" class="ex-2">
+      <h1>
+        Video - Media - Local - Custom - Navigation
+        <a href="#sec-1">&#9650; prew</a>
+        <a href="#sec-3">&#9660; next</a>
+      </h1>
+      	<!-- =====VIDEO CUSTOM CONTROL=====  -->
+         
+<div class="theVideo" style="text-align: center;">
+   <video src="./media/StarWars.mp4" type "video/mp4" id="video01" width="768"></video>
+ <div class="videoMenu">
+   <div onclick="playPause()" class="videoNav play"><p>Play/Pause</p></div>
+   <div onclick="Load()" class="videoNav load"><p>Stop</p></div>
+   <div onclick="makeNormal()" class="videoNav normal"><p>Normal</p></div>
+   <div onclick="makeSmall()" class="videoNav small"><p>Small</p></div>
+   <div onclick="makeBig()" class="videoNav big"><p>Big</p></div>
+  </div>
+</div>
+
+      <!-- https://www.w3schools.com/html/html5_video.asp -->
+</div>
+<script>
+  const myVideo = document.querySelector("#video01");
+
+  function playPause(){
+    if (myVideo.paused)
+    myVideo.play();
+  else
+  myVideo.pause();
+  }
+
+  function load(){
+    myVideo.load();
+  }
+
+  function makeBig(){
+    myVideo.width = 1024;
+  }
+
+  function makeSmall(){
+    myVideo.width = 640;
+  }
+
+  function makeNormal(){
+    myVideo.width = 768;
+  }
+</script>
+
+    </section>
+
+    <!-- EKSEMPEL 3 -->
+    <section id="sec-3" class="ex-3">
+      <h1>
+        youtube
+        <a href="#sec-2">&#9650; prew</a>
+        <a href="#sec-4">&#9660; next</a>
+      </h1>
+	<!-- =====YOUTUBE===== -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y9_-kJwHRtE?si=txEt_k51MWjwY0n_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- EKSEMPEL 4 -->
+    <section id="sec-4" class="ex-4">
+      <h1>
+        audio
+        <a href="#sec-3">&#9650; prew</a>
+        <a href="#sec-1">&#9660; next</a>
+      </h1>
+	<!-- =====AUDIO===== -->
+
+<audio controls>
+  <source src="media/Thunderstruck.mp3" type="audio/mpeg">
+</audio>
+
+    </section>
+
+  </body>
+</html>

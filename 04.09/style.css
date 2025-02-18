@@ -1,0 +1,276 @@
+/* ===== BASE SITE CSS START ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #a9bfc3;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: min(100%, 1140px);
+}
+
+section {
+    padding: 10px;
+}
+
+/* ===== BASE SITE CSS END ===== */
+
+/* ===== HEADER ===== */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url("/04.09/img/LandingPage.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-list{
+    position: fixed;
+height: 100%;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px;
+background-color: rgba(0, 0,0, 0.9);
+z-index: 666;
+
+list-style-type: none;
+place-content: center;
+display: none;
+}
+
+.nav-list.show{
+    display: grid;
+}
+
+.nav-item{
+    margin-bottom: 20px;
+}
+
+.nav-link{
+    pad: 10px 5px;
+
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #d5d5dd;
+
+    letter-spacing: 2px;
+}
+
+
+.nav-link:hover {
+    color: #b71c27;
+}
+
+h1 {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 20%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: clamp(3.125rem, 2.15rem + 4vw, 5rem);
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d5dddd;
+    letter-spacing: 3px;
+}
+
+/* ===== HEADER END ===== */
+
+/* ===== HIKER - SECTION AND ARTICLE CONTENT ===== */
+
+.sec-hikes {
+    background:linear-gradient(135deg, #85a875, #1d5503) ;
+    box-shadow:  inset 0px 5px 6px #1d5503;
+}
+
+section img {
+    border: 1px solid #fff;
+}
+
+h2 {
+    font-size: clamp(1.25rem, 1.087rem + 0.667vw, 1.563rem);
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+/* Figure Tag */
+figure{
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+figure:hover{
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.7);
+    transform: translateY(4px);
+}
+
+figure img{
+    object-fit: cover;
+    object-position: center;
+    transition: 2s ease;
+}
+
+figure img:hover{
+    transform: scale(2);
+}
+
+/* ===== HIKER - SECTION AND ARTICLE CONTENT END===== */
+
+/* ===== CONTACT - SECTION, FORM AND CONTACT CONTENT ===== */
+
+.sec-contact {
+    background: linear-gradient(135deg #75a3a8, #076c77);
+    box-shadow: inset 0 5px 6px rgba(0, 0, 0, 0.7);
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: #719c38;
+    font-weight: 500;
+    color: #fff;
+    line-height: 0;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #618d2e;
+}
+
+.contact-two h2 {
+    margin-top: 6px;
+}
+
+.contact-two ul {
+    margin: 20px 0 5px 15px;
+}
+
+.contact-two li {
+    padding-bottom: 15px;
+}
+
+.rain{
+    position: absolute;
+    margin: 0 auto;
+    width: min(100%, 1140px);
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/04.09/img/rain.png");
+    z-index: 0;
+    opacity: 0.5;
+    animation: Rain 0.3s linear infinite;
+    animation-play-state: paused;
+    display: none;
+}
+@keyframes Rain {
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 0% -40%;
+    }
+    
+}
+/* ===== CONTACT - SECTION, FORM AND CONTACT CONTENT END===== */
+
+.sec-Video{
+    
+}
+/* ===== SCREEN SIZE > DESKTOP ===== */
+
+@media (min-width: 580px) {
+    p {
+        columns: 2;
+    }
+    
+    .nav-list{
+        display: flex;
+        justify-content: end;
+
+        position: fixed;
+        z-index: 666;
+        height: 50px;
+        width: min(100%, 1140px);
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .burger-btn {
+        width: 30px;
+        height: 25px;
+        position: fixed;
+        right: 20px;
+        top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+             
+}
+.rain{
+    display: block;
+    animation-play-state: running;
+}
+}
+
+@media (min-width: 980px) {
+    .sec-hikes,
+    footer {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        flex-basis: 100%;
+    }
+    
+    p {
+        columns: 1;
+    }
+}
+
+
+
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Outdoors</title>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER AND NAVIGATION -->
+        <header id="home">
+
+            <div class="rain"></div>
+            
+            <nav class="main-nav">
+
+                          <div class="burger-btn">
+                          <div class="bar active"></div>
+                          <div class="bar active"></div>
+                          <div class="bar active"></div>
+                          </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hikes" class="nav-link">hikes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Video" class="Video">Video</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="header-heading">outdoors</h1>
+        </header>
+
+        <!-- HIKER - SECTION AND ARTICLE CONTENT -->
+        <section id="hikes" class="sec-hikes">
+            <article class="sea">
+                <figure class="img-wrap">
+                <img src="./img/sea-hiker.jpg" alt="Woman in kajak sea hiking" />
+                </figure>
+                <h2 class="hikes-heading">Sea Explorer</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                    asperiores hic nobis delectus laborum explicabo amet distinctio modi
+                    aut! Velit ab temporibus corporis itaque molestias dignissimos
+                    obcaecati modi, reiciendis cupiditate!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus
+                    est hic cumque nihil odio molestiae similique commodi veniam sequi.
+                    Accusantium molestias rerum dolore iusto ipsa quo id, tempora
+                    tenetur reprehenderit amet mollitia debitis beatae aspernatur
+                    dolorumque laborum nostrum inventore.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                    sapiente vel cupiditate, cum, adipisci non, tenetur quo expedita
+                    vero eos natus architecto minima labore. Nam!
+                </p>
+            </article>
+
+            <article class="forest">
+                <figure class="img-wrap">
+                <img src="./img/forest-hiker.jpg" alt="hiker crossing bridge in forest" />
+                </figure>
+                <h2 class="hikes-heading">Forest Hiker</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                    asperiores hic nobis delectus laborum explicabo amet distinctio modi
+                    aut! Velit ab temporibus corporis itaque molestias dignissimos
+                    obcaecati modi, reiciendis cupiditate!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus
+                    est hic cumque nihil odio molestiae similique commodi veniam sequi.
+                    Accusantium molestias rerum dolore iusto ipsa quo id, tempora
+                    tenetur reprehenderit amet mollitia debitis beatae aspernatur
+                    dolorumque laborum nostrum inventore.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                    sapiente vel cupiditate, cum, adipisci non, tenetur quo expedita
+                    vero eos natus architecto minima labore. Nam!
+                </p>
+            </article>
+
+            <article class="mountain">
+                <figure class="img-wrap">
+                <img src="./img/mountain-hiker.jpg" alt="hiker in mountains looking at lake" />
+                </figure>
+                <h2 class="hikes-heading">Mountain Adventurer</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                    asperiores hic nobis delectus laborum explicabo amet distinctio modi
+                    aut! Velit ab temporibus corporis itaque molestias dignissimos
+                    obcaecati modi, reiciendis cupiditate!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus
+                    est hic cumque nihil odio molestiae similique commodi veniam sequi.
+                    Accusantium molestias rerum dolore iusto ipsa quo id, tempora
+                    tenetur reprehenderit amet mollitia debitis beatae aspernatur
+                    dolorumque laborum nostrum inventore.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                    sapiente vel cupiditate, cum, adipisci non, tenetur quo expedita
+                    vero eos natus architecto minima labore. Nam!
+                </p>
+            </article>
+        </section>
+
+        <!-- CONTACT - SECTION, FORM AND CONTACT CONTENT -->
+        <footer id="contact" class="sec-contact">
+            <section class="contact-one">
+                <h2 class="contact-heading">Contact</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                    excepturi magnam corporis. Distinctio officia nostrum error
+                    consequuntur. Nemo ratione eligendi quisquam nobis optio inventore
+                    maiores!
+                </p>
+                <form action="#">
+                    <input type="text" name="name" id="name-txt" placeholder="name" />
+                    <input
+                        type="email"
+                        name="Email"
+                        id="email-txt"
+                        placeholder="email"
+                    />
+                    <textarea
+                        name="message"
+                        id="message-txt"
+                        cols="30"
+                        rows="10"
+                        placeholder="message"
+                    ></textarea>
+                    <input type="submit" value="send" />
+                </form>
+            </section>
+            <section class="contact-two">
+                <img src="./img/booking-meeting.jpg" alt="Woman booking meeting" />
+                <h2 class="contact-meeting-heading">Book a Meeting</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>+55 123 456 789</li>
+                    <li>meeting@outdoors.com</li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector (".burger-btn");
+        const navUL = document.querySelector (".nav-list");
+        const bars = document.querySelectorAll (".bar");
+
+        hamburger.addEventListener("click", () => {
+            navUL.classList.toggle("show");
+            bars.forEach((element) => {
+                element.classList.toggle("active");
+            });
+        });
+
+    </script>
+
+</body>
+</html>

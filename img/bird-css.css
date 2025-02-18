@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.birdBox{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: skyblue;
+    overflow: hidden;
+    
+}
+.bird{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 130px;
+    background-image: url("./img/Bird1000.png");
+    transform: translateX(-300px);
+    animation: birdFly 1.3s steps(10) infinite,
+    flyPath 5s linear infinite
+}
+@keyframes birdFly {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px 0;
+  }
+}
+@keyframes flyPath {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flyPath {
+    0%{
+        transform: translateX(-300px);
+    }
+
+
+}

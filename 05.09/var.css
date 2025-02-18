@@ -1,0 +1,49 @@
+/* #region ===== BASE SITE CSS START ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.625rem;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* #endregion ===== BASE SITE CSS END ===== */
+
+:root{
+    --light: #ccc;
+    --dark: #333;
+    --primary: #FA348D;
+    --secondary: #43DFFA;
+    --tertiary: #FAE743;
+    --quarternary: #A59E63;
+    --quinary: #7A0037;
+
+    --base font: 'Poppins', sans-serif;
+    --headline: 'Merriweather', serif;
+
+    
+
+}
+
+body{
+    background-color: var(--quarternary);
+}
+
+
+.container{
+    --primary: green;
+    height: 200px;
+    width: 200px;
+    background-color: var(--primary);
+}

@@ -1,0 +1,112 @@
+/* #region-----BASE CSS----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ddd;
+}
+h1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+h1 a {
+  color: orangered;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.home {
+  position: fixed;
+  color: orangered;
+  display: inline-block;
+  text-decoration: none;
+  font-size: clamp(1rem, 5vw,2rem);
+  left: 30px;
+  bottom: 30px;
+  text-transform: uppercase;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 5px solid #333;
+}
+
+/* #endregion-----BASE CSS -- END----- */
+
+/* EKSEMPEL 1 */
+/* Nothing goes here :-) */
+
+/* EKSEMPEL 2 */
+.theVideo{
+  background-color: #ccc;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.videoMenu{
+display: flex;
+.videoNav{
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin: 10px;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.videoNav: :hover{
+background-color: rgb(113, 113, 124);
+cursor: pointer;
+}
+
+#video01{
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+
+}
+
+.play{
+  background: url(../media/svg/millennium-falcon.svg) no-repeat 5px 5px;
+  background-size: 50px;
+}
+.load{
+  background: url(../media/svg/light-saber.svg) no-repeat 5px 5px;
+  background-size: 50px;
+}
+.normal{
+  background: url(../media/svg/star-wars.svg) no-repeat 5px 5px;
+  background-size: 50px;
+}
+.small{
+  background: url(../media/svg/badge.svg) no-repeat 5px 5px;
+  background-size: 50px;
+}
+.big{
+  background: url(../media/svg/space-station.svg) no-repeat 5px 5px;
+  background-size: 50px;
+}
+/* EKSEMPEL 3 */
+
+/* EKSEMPEL 4 */
+
+
