@@ -1,0 +1,191 @@
+/* #region BASE CSS  HER SKAL DU IKKE SKRIVE*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ddd;
+}
+h1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+h1 a {
+  color: orangered;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.home {
+  position: fixed;
+  color: orangered;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  right: 30px;
+  bottom: 30px;
+  text-transform: uppercase;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border-bottom: 5px solid #333;
+  display: grid;
+  place-content: center;
+  font-size: 18px;
+}
+/*#endregion BASE CSS  HER SKAL DU IKKE SKRIVE*/
+
+/*#region EKSEMPEL 1 */
+.container {
+  background-color: #fff;
+  height: 200px;
+  width: 700px;
+  padding: 30px;
+}
+
+.form-row {
+  padding: 10px 0;
+}
+
+.form-row label {
+  padding-right: 10px;
+}
+
+.form-row input {
+}
+/*#endregion EKSEMPEL 1 */
+
+/*#region EKSEMPEL 2*/
+.column-layout {
+  max-width: 1300px;
+  background-color: #fff;
+  line-height: 1.65;
+  padding: 20px 50px;
+}
+
+.main-column {
+}
+
+.sidebar-one {
+}
+
+.sidebar-two {
+}
+/*#endregion EKSEMPEL 2*/
+
+/*#region EKSEMPEL 3 */
+.call-outs-container {
+  width: 1300px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: start;
+  background-color: rgb(52, 44, 44);
+}
+
+.call-out {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 300px;
+  flex: 1
+  ;
+}
+/*#endregion EKSEMPEL 3 */
+
+/*#region Farver til eksempel HER SKAL DU IKKE SKRIVE*/
+.call-out:nth-child(1) {
+  background-color: #c0dbe2;
+}
+
+.call-out:nth-child(2) {
+  background-color: #cdf1c3;
+}
+
+.call-out:nth-child(3) {
+  background-color: #ccb9da;
+}
+/*#endregion Farver til eksempel HER SKAL DU IKKE SKRIVE*/
+
+/*#region EKSEMPEL 4 */
+.fixed-size-container {
+  max-width: 1300px;
+  background-color: #fff;
+  padding: 30px;
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.fixed-size {
+  flex-grow: 1;
+  width: 150px;
+  height: 100px;
+  background-color: #990b47;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+/*#endregion EKSEMPEL 4 */
+
+/*#region EKSEMPEL 5 */
+.banner {
+  height: 400px;
+  max-width: 700px;
+  padding: 30px;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.center-me {
+  color: #fff;
+  font-size: 50px;
+  margin: auto;
+}
+/*#endregion EKSEMPEL 5 */
+
+/*#region EKSEMPEL 6 */
+.equal-height-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.first {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1;
+}
+
+.second {
+  background-color: yellow;
+  flex: 1;
+}
+
+.second-a {
+  background-color: #c0dbe2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.second-b {
+  background-color: #cdf1c3;
+}
+/*#endregion EKSEMPEL 6 */

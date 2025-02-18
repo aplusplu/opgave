@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* KNAPPER */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.large {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.small {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+}
+
+
+/* FARVER */
+
+.grey {
+background-color: grey;
+}
+
+.blue {
+    background-color: rgb(50, 73, 130);
+}
+
+.purple {
+    background-color: rgb(135, 67, 149);
+}
+
+.red {
+    background-color: rgb(183, 66, 91);
+}
+
+.green {
+    background-color: rgb(84, 151, 84);
+}
+
+
+
+
+
+
+
+
+
+
+/* OVERSKRIFT */
+
+h3 {
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 120px;
+    letter-spacing: 4px;
+    
+}

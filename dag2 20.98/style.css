@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+div{
+    width: 150px;
+    height: 150px;
+}
+
+.Product-box{
+    background-color: yellowgreen;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.statement-box{
+    background-color: turquoise;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+
+.biggerBox{
+    width: 200px;
+    height: 200px;
+}
+
+p{
+    color: rgb(20, 1, 1);
+    background-color: blue;
+    padding: 30px;
+}
+
+#firstClass{
+    background-color: blueviolet;
+}
+
+.container{
+    width: 1000px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Galleri</title>
+</head>
+<body>
+        <nav class="nav">
+
+    <button class="burger-btn fa fa-bars" id="burger"></button>
+    <ul class="nav-ul" id="navUL">
+    <li class="nav-item">
+        <a href="#home" class="nav-link">HJEM</a>
+    </li>
+    <li class="nav-item">
+        <a href="#web" class="nav-link">WEBUDVIKLER</a>
+    </li>
+    <li class="nav-item">
+        <a href="#links" class="nav-link">LINKS</a>
+    </li>
+    <li class="nav-item">
+        <a href="#kontakt" class="nav-link">KONTAKT</a>
+    <li class="nav-item">
+        <a href="galleri.html" class="nav-link">GALLERI</a>
+    </li>
+ </ul>      
+</nav>  
+
+
+
+ <!-- GALLERI START -->   
+  <header class="gall-header">
+    <h1 class="gall-heading">
+        Galleri
+    </h1>
+    <div class="galleri container">
+<img src="http://unsplash.it/500/500" alt="">
+<img src="http://unsplash.it/501/500" alt="">
+<img src="http://unsplash.it/500/501" alt="">
+<img src="http://unsplash.it/501/501" alt="">
+<img src="http://unsplash.it/499/500" alt="">
+<img src="http://unsplash.it/500/499" alt="">
+    </div>
+  </header>    
+       
+ <!-- GALLERI END -->            
+
+            <footer class="footer">
+        <div class="footer-parent container">
+            <div class="mcm">
+                <img
+                 src="./img/logo/LogoHvidUdenNavn.png" 
+                alt="Mcdm Logo" 
+                class="mcdm-logo"
+                />
+                <p class="mcdm-text">
+                    Media College Denmark <br>
+                    Skaldehojvej 2, <br>
+                    8800 Viborg <br>
+                    Tlf.:86 67 50 55
+                </p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/media.college.denmark">
+                    <i class="fa fa-facebook-square social-icon" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/medieskolerne">
+                    <i class="fa fa-instagram social-icon"></i>
+                </a>
+                <a href="https://www.youtube.com/Medieskolerne">
+                    <i class="fa fa-youtube-play social-icon"></i>
+                </a>
+
+                 <script>
+        const hamburger = document.getElementById("burger");
+        const navUL = document.getElementById("navUL");
+
+        hamburger.addEventListener("click", () => {
+            navUL.classList.toggle("show");
+            hamburger.classList.toggle("active");
+        });
+
+        navUL.addEventListener("click", () => {
+             navUL.classList.remove("show");
+        })
+      </script>
+
+            </div>
+        </div>
+      </footer>
+</body>
+</html>

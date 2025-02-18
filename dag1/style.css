@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Dette er en kommentar*/
+
+p{
+/*     font-family: Arial, Helvetica, sans-serif;
+ */ 
+  font-family: "Lobster Two", sans-serif;
+     font-size: 1em;
+    font-style: oblique;
+    font-weight: 900;
+   /*  font-variant: small-caps; */
+    text-align: center;
+
+}

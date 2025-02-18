@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <button class="burger-btn fa fa-bars" id="burger"></button>
+        <ul class="nav-ul" id="navUL">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="galleri.html" class="nav-link">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header" id="home">
+        <div class="header-content">
+            <h1>ScanWebProject (SWP)</h1>
+            <p>Your one-stop solution for web development, design, and more.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </header>
+
+    <!-- Section 1: About Us -->
+    <section class="section-1 frame" id="about">
+        <div class="background-image">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a dynamic team of creatives with a passion for web development, offering the best solutions for your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 and 3: Services -->
+    <div class="two-columns frame" id="services">
+        <section class="section-2">
+            <div class="background-image">
+                <h2>Web Development</h2>
+                <p>We build responsive, high-performing websites tailored to your needs.</p>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="background-image">
+                <h2>Design Services</h2>
+                <p>Our design team creates visually stunning, user-friendly interfaces.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section 4: Contact -->
+    <section class="section-4 frame" id="contact">
+        <div class="background-image">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <input type="text" name="name" class="contact-input" placeholder="Your Name" required>
+                    <input type="email" name="email" class="contact-input" placeholder="Your Email" required>
+                    <textarea name="message" class="contact-input" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 SWP. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" class="social-icon fa fa-facebook"></a>
+                <a href="https://www.instagram.com" class="social-icon fa fa-instagram"></a>
+                <a href="https://www.youtube.com" class="social-icon fa fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("burger");
+        const navUL = document.getElementById("navUL");
+
+        hamburger.addEventListener("click", () => {
+            navUL.classList.toggle("show");
+            hamburger.classList.toggle("active");
+        });
+
+        navUL.addEventListener("click", () => {
+            navUL.classList.remove("show");
+        });
+    </script>
+</body>
+</html>

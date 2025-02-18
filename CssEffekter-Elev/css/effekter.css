@@ -1,0 +1,283 @@
+/*#region -----BASE CSS- HER SKAL DU IKKE SKRIVE----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ddd;
+}
+h1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+h1 a {
+  color: orangered;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.home {
+  position: fixed;
+  color: orangered;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  left: 30px;
+  bottom: 30px;
+  text-transform: uppercase;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 5px solid #333;
+}
+.box {
+  width: 250px;
+  height: 250px;
+  background-color: lightsteelblue;
+  border: 1px solid #333;
+  font-size: clamp(1rem, 5vw, 4rem);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  font-size: clamp(4rem, 5vw, 7rem);
+  margin: 0 3rem;
+}
+
+/*#endregion -----BASE CSS -- END----- */
+
+/*#region EKSEMPEL 1 */
+.one-1 {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.one-2 {
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  /* border-radius: 0px 25% 0px 25%; */
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+
+.one-3 {
+  background-color: transparent;
+  border-top: 125px solid transparent;
+  border-right: 125px solid transparent;
+  border-bottom: 125px solid transparent;
+  border-left: 125px solid blue;
+}
+/*#endregion EKSEMPEL 1 */
+
+/*#region EKSEMPEL 2*/
+.two-1 {
+  background: linear-gradient(orangered 30%, purple 50%, yellow 60%);
+}
+
+.two-2 {
+  background: radial-gradient(at 30% 30%, #fff, #3b0909 #000);
+  border-radius: 50%;
+}
+/*#endregion EKSEMPEL 2*/
+
+/*#region EKSEMPEL 3 */
+.three-1 {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.three-2 {
+color: yellow;
+text-shadow: 3px 3px 0 black,
+             6px 6px 0 yellowgreen,
+             9px 9px 0 deepskyblue,
+             12px 12px 0 deeppink
+             
+}
+/*#endregion EKSEMPEL 3 */
+
+/*#region EKSEMPEL 4 */
+.four-1 {
+  transform: rotate(45deg);
+  color: yellow;
+  text-shadow: 
+   -2px 0px black,
+   0px -2px black,
+   0px -2px black,
+   2px 0px black,
+   0px 2px black
+}
+
+.four-2 {
+  transform: skew(-30deg);
+  color: yellow;
+  -webkit-text-stroke: 2px black;
+}
+/*#endregion EKSEMPEL 4 */
+
+/*#region EKSEMPEL 5 */
+.five-1 {
+  transform: rotate(45deg);
+}
+.five-2 {
+  transform: skewY(-30deg) rotate(45deg);
+}
+/*#endregion EKSEMPEL 5 */
+
+/*#region EKSEMPEL 6 */
+.six-1 {
+  transform: rotate(0deg);
+  width: 250px;
+  transition: 0.2s;
+}
+.six-1:hover{
+  transform: rotate(45deg);
+  width: 400px;
+}
+
+.six-2 {
+  border: none;
+}
+.flip-card{
+  background-color: transparent;
+  perspective: 1000px;
+}
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden;
+ display: grid;
+ place-content: center;
+ border: 1px solid black;
+}
+
+.flip-card-front{
+  background-color: lightsteelblue;
+}
+.flip-card-back{
+  background-color: dodgerblue;
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner{
+  transform: rotateY(180deg);
+}
+/*#endregion EKSEMPEL 6 */
+
+/*#region EKSEMPEL 7 */
+.seven-1 {
+  transform: translateY(0);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.515);
+  transition: 0.3s;
+}
+.seven-1:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.515);
+}
+
+.seven-2 {
+  background-image: url("http://unsplash.it/300/300");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1.5s;
+}
+.seven-2:hover{
+  background-size: 150%;
+  background-position: left top;
+
+}
+
+/*#endregion EKSEMPEL 7 */
+
+/*#region EKSEMPEL 8 */
+.eight-1 {
+  position: relative;
+  top: 0;
+  animation-name: eight-one;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes eight-one {
+0%{
+top: 0;
+}
+
+100%{
+top: 200px;
+
+
+}
+}
+
+.eight-2 {
+  text-transform: uppercase;
+  position: relative;
+  color: #ddd;
+  -webkit-text-stroke: 2px #ccc;
+}
+
+.eight-2::before{
+ content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  color: #00bb64;
+  -webkit-text-stroke: 2px #f30d0d;
+  border-right: 3px solid #00bb64;
+  overflow: hidden;
+  
+  animation: text-run 6s linear infinite;
+}
+
+@keyframes text-run {
+
+  0%,
+  10%,
+  100%{
+    width: 0;
+  }
+
+  70%,
+  90%{
+    width: 100%;
+  }
+  
+}
+/*#endregion EKSEMPEL 8 */

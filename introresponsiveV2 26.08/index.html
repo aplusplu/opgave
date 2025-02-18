@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro Responsive</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="section-inner">
+      <h1>Header Example</h1>
+    </div>
+  </header>
+  <!--/header-->
+
+  <!-- nav -->
+  <nav class="nav">
+    <div class="section-inner">
+      <!-- Burger Menu -->
+      <div class="toggle-button" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <!-- Menu Items -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--/nav-->
+
+  <main class="body-content">
+    <div class="section-inner">
+      <!-- thirds -->
+      <section class="thirds">
+        <!-- one-third -->
+        <article class="one-third">
+          <img src="images/boy01.jpg" alt="A bird on a fence" />
+          <h2>Area 1</h2>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </article>
+        <!--/one-third-->
+
+        <!-- one-third -->
+        <article class="one-third">
+          <img src="images/girl01.jpg" alt="A bird eating" />
+          <h2>Area 2</h2>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </article>
+        <!--/one-third-->
+
+        <!-- one-third -->
+        <article class="one-third">
+          <img src="images/boy02.jpg" alt="A cat" />
+          <h2>Area 3</h2>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </article>
+        <!--/one-third-->
+      </section>
+      <!--/thirds-->
+
+      <!-- two-columns -->
+      <section class="two-columns">
+        <!-- main -->
+        <article class="main">
+          <h2>Primary Text Area</h2>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </article>
+        <!--/main-->
+
+        <!-- side -->
+        <aside class="side">
+          <!-- info-box -->
+          <article class="info-box-a">
+            <h4>Important Information</h4>
+            <p>Lorem ipsum dolor sit amet...</p>
+          </article>
+          <!--/info-box-->
+
+          <!-- info-box -->
+          <article class="info-box-b hide-mobile">
+            <h4>Less Important</h4>
+            <p>Lorem ipsum dolor sit amet...</p>
+          </article>
+          <!--/info-box-->
+        </aside>
+        <!--/side-->
+      </section>
+      <!--/two-columns-->
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="section-inner">
+      <p>&copy; Bob Design</p>
+    </div>
+  </footer>
+  <!--/footer-->
+
+  <script>
+    function toggleMenu() {
+      const navUl = document.querySelector('nav ul');
+      navUl.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

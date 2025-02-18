@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Webudvikler</title>
+</head>
+<body id="home">
+    <nav class="nav">
+
+    <button class="burger-btn fa fa-bars" id="burger"></button>
+    <ul class="nav-ul" id="navUL">
+    <li class="nav-item">
+        <a href="#home" class="nav-link">HJEM</a>
+    </li>
+    <li class="nav-item">
+        <a href="#web" class="nav-link">WEBUDVIKLER</a>
+    </li>
+    <li class="nav-item">
+        <a href="#links" class="nav-link">LINKS</a>
+    </li>
+    <li class="nav-item">
+        <a href="#kontakt" class="nav-link">KONTAKT</a>
+    <li class="nav-item">
+        <a href="galleri.html" class="nav-link">GALLERI</a>
+    </li>
+ </ul>      
+</nav>    
+   
+<!-- Header Start -->
+<header class="header">
+    <div class="header-textBox">
+        <h1 class="header-heading container">
+            Media College Denmark
+        </h1>
+        <p class="header-text container">
+        Skolens speciale er kompetencegivende uddannelser indenfor faste og levende billeder samt skærm- og internetbaseret kommunikation    
+        </p>
+    </div>
+</header>
+ <!-- Header End -->
+  <!-- WEBUDVIKLER START -->
+  <section class="web-dev" id="web">
+    <h2 class="web-dev-heading container">
+        Webudvikler
+    </h2>
+    <h3 class="web-dev-subHeading container">
+        På uddannelsen lærer du fx. om front-end programmering, webløsninger og projektstyring.
+    </h3>
+    <p class="web-dev-text container">
+        Du lærer at lave websites og applikationer. Du bliver i stand til at programmere avancerede webløsninger og integrere medier og grafik.<br>
+Uddannelsen giver dig både teknisk og kreativ indsigt samt fornemmelse for budskab og indhold.<br>
+Som Webudvikler kan du fx hjælpe virksomheder med deres digitale udtryk, når du skaber iøjnefaldende hjemmesider og internetløsninger.<br>
+Du kan arbejde som ansat i private og offentlige virksomheder, på reklame- og webbureauer. Du har også mulighed for at starte egen virksomhed.<br>
+</p>
+<div style="margin-bottom: 10px;"></div>
+<p class="web-dev-text container">Uddannelsen foregår kun på skole.
+    </p>
+  </section>
+  <!-- WEBUDVIKLER END -->
+
+  <section class="bg-pic-dev"></section>
+  <!--  TOM SEKTION DER HOLDER ET BAGGRUNDSBILLEDE -->
+    <section>
+        <!-- LINKS START -->
+        <section class="links"id="links">
+        <div class="links-data">
+            <h2 class="2links-heading container">
+                Find vores uddannelser
+            </h2>
+            <ul class="link-ul container">
+                <li class="link-item">
+                    <a href="https://mcdm.dk/webudvikler/" class="">Webudvikler</a>
+                </li>
+                <li class="link-item">
+                    <a href="https://mcdm.dk/fotograf/grundforlob-fotograf/" class="">Fotograf</a>
+                </li>
+                <li class="link-item">
+                    <a href="https://mcdm.dk/film-og-tv-produktionstekniker/grundforlob-film-tv/" class="">Film og TV prod.</a>
+                </li>
+            </ul>
+        </div>
+        </section>
+        
+    </section>
+    <!-- LINKS END -->
+     <!-- KONTAKT START -->
+      <section class="contact" id="kontakt">
+        <div class="contact-data">
+            <h2 class="contact-heading container">
+                Kontakt os
+            </h2>
+            <p class="contact-text container">
+                Har du spørgsmål til uddannelserne, er du velkommen til at kontakte os på tlf. 86 67 50 55 eller herunder:
+            </p>
+            <form action="#" class="contact-form container">
+                <input type="email" name="email" id="email" placeholder="E-mail" class="contact-input">
+
+                <input type="text" name="name" id="name" placeholder="Navn" class="contact-input">
+
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Besked" class="contact-input"></textarea>
+                
+                <input type="submit" value="Send" class="contact-input contact-btn" />
+
+            </form>
+        </div>
+      </section>
+    <!-- KONTAKT END -->
+     <!-- FOOTER START -->
+      <footer class="footer">
+        <div class="footer-parent container">
+            <div class="mcm">
+                <img
+                 src="./img/logo/LogoHvidUdenNavn.png" 
+                alt="Mcdm Logo" 
+                class="mcdm-logo"
+                />
+                <p class="mcdm-text">
+                    Media College Denmark <br>
+                    Skaldehojvej 2, <br>
+                    8800 Viborg <br>
+                    Tlf.:86 67 50 55
+                </p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/media.college.denmark">
+                    <i class="fa fa-facebook-square social-icon" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/medieskolerne">
+                    <i class="fa fa-instagram social-icon"></i>
+                </a>
+                <a href="https://www.youtube.com/Medieskolerne">
+                    <i class="fa fa-youtube-play social-icon"></i>
+                </a>
+            </div>
+        </div>
+      </footer>
+     <!-- FOOTER END -->
+      <script>
+        const hamburger = document.getElementById("burger");
+        const navUL = document.getElementById("navUL");
+
+        hamburger.addEventListener("click", () => {
+            navUL.classList.toggle("show");
+            hamburger.classList.toggle("active");
+        });
+
+        navUL.addEventListener("click", () => {
+             navUL.classList.remove("show");
+        })
+      </script>
+</body>
+</html>

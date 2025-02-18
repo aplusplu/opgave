@@ -1,0 +1,149 @@
+
+
+/* FONTS */
+
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Sigmar */
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+ font-family: 'sigmar';
+ font-size: 60px;
+ color: #414D80;
+ letter-spacing: 4px;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+.search-field {
+    width: fit-content;
+    margin: auto;
+}
+
+.search-field input {
+    width: 300px;
+    height: 40px;
+    padding-left: 20px; 
+    margin-left: -5px;
+    border-radius: 0px 25px 25px 0px;
+    border: 1px solid grey;
+    font-family: 'quicksand';
+
+}
+
+.search-field button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8D6EB5;
+    font-family: 'sigmar';
+    letter-spacing: 1px;
+    color: white;
+}
+
+#category {
+    height: 40px;
+    width: 100px;
+    padding: 0 15px 0 15px;
+    border-radius: 25px 0px 0px 25px;
+    font-family: 'sigmar';
+    color: #8D6EB5;
+    letter-spacing: 1px;
+
+}
+
+.btn-container {
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.btn-name {
+    width: fit-content;
+    height: 30px;
+    margin: 0 10px 0 10px;
+    padding: 0 20px 0 20px; 
+    border-radius: 25px;
+    border: 1px solid #414D80;
+    color: #414D80;
+    background-color: transparent;
+    font-family: 'quicksand';
+}
+
+.btn-name:hover {
+    background-color: #414D80;
+    color: white;
+}
+
+.profile {
+    margin: 50px 20% 50px 20%;
+    height: 500px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.profile-img {
+    background-color: #EEE9F4;
+    border-radius: 30px;
+}
+
+.profile-img .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.profile-info {
+    padding: 100px;
+    background-color: #ECEDF3;
+    border-radius: 30px;
+}
+
+.profile-info h3 {
+    font-family: sigmar;
+    color: #8D6EB5;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.profile-info p b {
+    font-family: sigmar;
+    color: #414D80;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.profile-info p {
+    font-family: 'quicksand';
+    color: #414D80;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+

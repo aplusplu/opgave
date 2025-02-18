@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Title 1 - Gothic Style */
+.title1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+/* Paragraph 1 - Gothic Style */
+.para1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Title 2 - Sans-serif Style */
+.title2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-left: 30px;
+}
+
+/* Paragraph 2 - Sans-serif Style */
+.para2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Title 3 - Modern Style */
+.title3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-bottom: 16px;
+    margin-left: 30px;
+}
+
+/* Paragraph 3 - Modern Style */
+.para3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Title 4 - Elegant Serif Style */
+.title4 {
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    margin-bottom: 16px;
+    margin-left: 30px;
+}
+
+/* Paragraph 4 - Elegant Serif Style */
+.para4 {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}

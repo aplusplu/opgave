@@ -1,0 +1,89 @@
+/* #reg1on ===== BASE SITE CSS START ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.625rem;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* #endreg1on ===== BASE SITE CSS END ===== */
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, footer{
+    text-align: center;
+    height: 200px;
+    justify-content: center; 
+    align-items: center;
+}
+header{margin-bottom: 10px;
+    background-image: url(https://unsplash.it/1300/800?random);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer{margin-bottom: 10px;
+}
+section{
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1;
+    margin: 10px 0;
+    
+
+}
+
+.sec-1{
+    background-image: url(https://unsplash.it/501/500?random);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ .sec-3{
+   background-image: url(https://unsplash.it/502/500?random);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sec-2{background-image: url(https://unsplash.it/503/500?random);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
+
+ .sec-4{
+    background-image: url(https://unsplash.it/500/500?random);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1{
+font-size:  40px;
+font-weight: 400;
+
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
