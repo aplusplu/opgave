@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+/* OVERORDNEDE INDSTILLINGER */
+
+* {box-sizing: border-box;}
+
+body {margin: 0; font-family: 'nunito', sans-serif; font-size: 16px; font-weight: 300; line-height: 1.2;}
+
+h1 {font-size: clamp(54px, 9vw, 9vw); font-weight: 500; line-height: 0; margin-top: 1vw; margin-bottom: 0;}
+
+h2 {font-size: clamp(32px, 2.5vw, 48px); font-weight: 500; line-height: 1;}
+
+a {color: #0098d5; text-decoration: none;}
+
+.bold {font-weight: 600;}
+
+.top {width: 100%; height: 100%;}
+
+.icon {width: 36px; margin-right: 6px;}
+
+
+/* MENU BAR */
+
+.fixed-menu {
+    height: 5vw;
+    background: rgb(0, 0, 0, 0.5);
+    position: fixed;
+}
+
+.container-menu {
+    display: grid;
+    grid-template-columns: 11.5vw 10vw 7vw 71.5vw;
+    grid-template-rows: 5vw;
+    grid-template-areas:
+    ". logo shop burger";
+}
+
+.logo {
+    margin-left: 0;
+    margin-top: 0.7vw;
+    grid-area: logo;
+    width: clamp(40px, 5.5vw, 5.5vw);
+    height: auto;
+}
+
+.shop-menu {
+    margin-left: 0;
+    margin-top: 1.1vw;
+    grid-area: shop;
+    font-size: clamp(22px, 2.5vw, 2.5vw);
+    color: white;
+}
+
+.burger {
+    margin-left: 0;
+    margin-top: 1.8vw;
+    grid-area: burger;
+    width: clamp(22px, 2.7vw, 2.7vw);
+}
+
+/* COVERBILLEDE OG TEKST PÅ BILLEDE */
+
+header {
+    background: url("images/cover.jpg") rgb(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    background-size: 100%;
+    height: 30.05vw;
+}
+
+.cover-text {
+    display: grid;
+    place-content: center;
+    color: white;
+}
+
+.slogan {
+    color: white;
+    text-align: center;
+    font-size: 1.75vw;
+    line-height: 0.1;
+    font-weight: 500;
+}
+
+.top-address {
+    padding: 5vw 0;
+    text-align: center;
+    font-size: clamp(12px, 1.7vw, 36px);
+}
+
+/* CARDS */
+
+.container-cards {
+    max-width: 76%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 40px;
+    row-gap: clamp(40px, 4vw, 60px);
+}
+
+.card {
+    background-color: #ebebeb;
+    border: solid;
+    border-color: #ebebeb;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.card img {
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.lightgrey {
+    display: grid;
+    place-content: center;
+    height: clamp(50px, 4.5vw, 80px);
+}
+
+.darkgrey {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    height: clamp(60px, 4.5vw, 80px);
+    border-radius: 0 0 20px 20px;
+    background-color: #ccc;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 12vw;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "map info";
+}
+
+.footer-map {
+    grid-area: map;
+    border: 0;
+    max-width: 100%;
+    height: 35vw;
+}
+
+.footer-info {grid-area: info;}
+
+.footer-container {margin: 4vw;}
+
+.text {margin-top: 20px;}
+
+.footer-address-open {margin-top: 20px; display: flex;}
+
+.address {margin-right: 40px;}
+
+.some {margin-top: 20px; display: flex;}
+
+@media (max-width: 960px) {
+
+    .slogan {display: none;}
+
+    footer {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "info"
+        "map";}
+
+        .footer-info {margin-bottom: 40px;}}
+        
+
+@media (max-width: 768px) {
+
+        .fixed-menu {height: 35px;}
+
+        .container-menu {
+            display: grid;
+            grid-template-columns: 10px 60px 55px 1fr;
+        }
+
+        .burger {width: 22px; margin-top: 12px;}
+
+        .footer-container {margin: 8vw 4vw;}
+}
+
+@media (max-width: 425px) {
+
+        .container-cards {margin-left: 15px; margin-right: 15px; max-width: 100%;}
+}
+
+.bottom-line {
+    width: 100%;
+    bottom: 0;
+    height: 5vw;
+    background-color: black;
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
+    color: white;
+    display: grid;
+    place-content: center;
+}

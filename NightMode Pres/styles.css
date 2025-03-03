@@ -1,0 +1,280 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #0b0d24, #1a1a2e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://source.unsplash.com/1920x1080/?aurora") no-repeat
+    center/cover;
+  opacity: 0.4;
+}
+
+.hero .content {
+  z-index: 2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* Starry sky animation */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.category {
+  padding: 2rem;
+  text-align: center;
+}
+
+.category h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #4ca1af;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #f5a623;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #0f3460;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+body {
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+body.night {
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+  color: #f5f5f5;
+}
+
+body.day {
+  background: linear-gradient(to bottom, #87ceeb, #fffacd);
+  color: #333;
+}
+
+#toggle-dark-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun-moon-toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sun {
+  width: 30px;
+  height: 30px;
+  background: #ffd700;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ffd700;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.moon {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.moon .crater {
+  width: 6px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.moon .crater:nth-child(1) {
+  top: 5px;
+  left: 8px;
+}
+
+.moon .crater:nth-child(2) {
+  top: 15px;
+  left: 12px;
+}
+
+.moon .crater:nth-child(3) {
+  top: 10px;
+  left: 18px;
+}
+
+body.day .sun {
+  transform: scale(1);
+  box-shadow: 0 0 15px #ffd700;
+}
+
+body.day .moon {
+  transform: scale(0);
+}
+
+body.night .sun {
+  transform: scale(0);
+  box-shadow: none;
+}
+
+body.night .moon {
+  transform: scale(1);
+}
+
+#toggle-dark-mode {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  padding: 10px;
+  z-index: 2;
+}
+
+.sun-moon-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun {
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+}
+
+.moon .crater {
+  width: 4px;
+  height: 4px;
+  background: darkgray;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.moon .crater:nth-child(1) {
+  top: 2px;
+  left: 3px;
+}
+
+.moon .crater:nth-child(2) {
+  bottom: 3px;
+  right: 5px;
+}
+
+.moon .crater:nth-child(3) {
+  top: 10px;
+  left: 8px;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+}

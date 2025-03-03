@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: #3a3a3a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* HeaderSec */
+.header {
+    position: relative;
+    padding: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: url('header-background.jpg') no-repeat center center/cover;
+}
+
+/* NavMenu */
+.nav-menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(104, 9, 139);
+}
+
+/* Header Content */
+.header-content {
+    max-width: 1200px;
+    margin-left: 2rem;
+}
+
+.header-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.header-location {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.art-button {
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.art-button a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border-radius: 50px; 
+    background: linear-gradient(135deg, #5e467e, #9c7cb8); 
+    box-shadow: 0 10px 20px rgba(94, 70, 126, 0.5); 
+    overflow: hidden; 
+    transition: all 0.3s ease;
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+.art-button a:hover {
+    background: linear-gradient(135deg, #9c7cb8, #5e467e);
+    box-shadow: 0 15px 30px rgba(94, 70, 126, 0.7); 
+    transform: scale(1.2); 
+}
+
+
+/* Featured Arts Sec */
+.featured-artworks {
+    padding: 4rem 2rem;
+    background-color: #181818;
+    text-align: center;
+    
+}
+
+
+.featured-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.featured-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+/* Art Grid */
+.artwork-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+
+
+.artwork-item {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.artwork-item:hover{
+    transform: scale(1.2)
+}
+
+.artwork-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(94, 70, 126, 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.artwork-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.artwork-year {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.artwork-image {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    
+    
+}
+
+/* More W Bttn */
+.more-work-button a {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.more-work-button a:hover {
+    background: rgba(94, 70, 126, 0.5);
+}
+
+/* Hero */
+.hero-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 100vh; 
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+/* Gradient Bc */
+.gradient-background {
+    background: linear-gradient(135deg, #3a3a3a, #1c1c1c, #5e467e); 
+    background-size: 400% 400%; 
+    animation: gradientAnimation 25s ease infinite; 
+    position: relative; 
+    z-index: 1;
+}
+
+/* Effect */
+.gradient-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0.1px); 
+    z-index: -1; 
+}
+
+/* About Brâncuși Sec */
+.bio-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff; 
+}
+.bio-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.bio-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Artworks Sec */
+.featured-artworks {
+    padding: 4rem 2rem;
+    color: #fff; 
+    text-align: center;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

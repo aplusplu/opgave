@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Constantin Brâncuși</title>
+    <style>
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#artwork">Artwork</a></li>
+        </ul>
+    </nav>
+    <div class="header-content">
+        <!-- Hero Image -->
+        <img src="./media/brancusi.jpg" alt="Hero Image of Constantin Brâncuși" class="hero-image">
+        <h1 class="header-title">CONSTANTIN BRÂNCUȘI</h1>
+        <p class="header-subtitle"> The Patriarch </p>
+        <p class="header-location">of Modern Sculpture</p>
+        <div class="art-button">
+            <a href="#artwork">Browse Art</a>
+        </div>
+    </div>
+</header>
+<!-- Featured Artworks Section -->
+<section id="artwork" class="featured-artworks gradient-background">
+    <div class="gradient-wrapper">
+        <h2 class="featured-title">Featured Artworks</h2>
+        <p class="featured-description">Some of Brâncuși's most renowned works, showcasing his unique style and vision.</p>
+
+        <!-- Artworks Grid -->
+        <div class="artwork-grid">
+            <div class="artwork-item">
+                <div class="artwork-overlay">
+                    <p class="artwork-title">The Kiss</p>
+                    <p class="artwork-year">1907</p>
+                </div>
+                <div class="artwork-image">
+                    <img src="./media/kiss.jpg" alt="The Kiss by Constantin Brâncuși">
+                </div>
+            </div>
+            <div class="artwork-item">
+                <div class="artwork-overlay">
+                    <p class="artwork-title">Bird in Space</p>
+                    <p class="artwork-year">1923</p>
+                </div>
+                <div class="artwork-image">
+                    <img src="./media/bird.jpeg" alt="Bird in Space by Constantin Brâncuși">
+                </div>
+            </div>
+            <div class="artwork-item">
+                <div class="artwork-overlay">
+                    <p class="artwork-title">Endless Column</p>
+                    <p class="artwork-year">1938</p>
+                </div>
+                <div class="artwork-image">
+                    <img src="./media/column.webp" alt="Endless Column by Constantin Brâncuși">
+                </div>
+            </div>
+        </div>
+
+        <!-- More Work Button -->
+        <div class="more-work-button">
+            <a href="javascript:void(0);" id="load-more">More Work</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Brâncuși Section -->
+<section id="bio" class="bio-section gradient-background">
+    <div class="gradient-wrapper">
+        <h2>About Brâncuși</h2>
+        <p>Constantin Brâncuși (1876–1957) was a visionary sculptor and one of the most influential artists of the 20th century. Born in a small village in Romania, Brâncuși's journey from a shepherd boy to the pioneer of modern sculpture is nothing short of extraordinary.</p>
+
+        <p>With a deep connection to nature and tradition, Brâncuși's works are a celebration of simplicity and essence. He sought to capture the "spirit" of his subjects, stripping forms down to their purest, most elemental shapes. His iconic pieces, such as Bird in Space, The Endless Column, and The Kiss, revolutionized the art world, emphasizing abstraction and redefining sculpture as we know it.</p>
+
+        <p>Brâncuși’s workshop in Paris became a hub for creativity, attracting visionaries like Picasso and Duchamp. Despite his international acclaim, he remained deeply connected to his Romanian roots, often drawing inspiration from folklore and his childhood memories.</p>
+
+        <p>Today, Brâncuși's works are celebrated worldwide, housed in prestigious museums and public spaces. His legacy lies in his ability to blend modernist innovation with timeless simplicity, leaving behind a body of work that continues to inspire artists and art lovers alike.</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById('load-more').addEventListener('click', function () {
+        const gallery = document.querySelector('.artwork-grid');
+
+        const newArtworks = [
+            { title: "Sleeping Muse", year: "1908", img: "./media/sleeping-muse.jpg" },
+            { title: "Mademoiselle Pogany", year: "1912", img: "./media/mademoiselle-pogany.jpg" },
+            { title: "Fish", year: "1924", img: "./media/fish.jpg" },
+            { title: "The Sorceress", year: "1916", img: "./media/the-sorceress.jpg" },
+            { title: "Prometheus", year: "1911", img: "./media/prometheus.jpg" },
+            { title: "Table of Silence", year: "1938", img: "./media/table.jpg" },
+        ];
+
+        newArtworks.forEach(artwork => {
+            const artworkItem = document.createElement('div');
+            artworkItem.classList.add('artwork-item');
+
+            const artworkOverlay = document.createElement('div');
+            artworkOverlay.classList.add('artwork-overlay');
+
+            const artworkTitle = document.createElement('p');
+            artworkTitle.classList.add('artwork-title');
+            artworkTitle.textContent = artwork.title;
+
+            const artworkYear = document.createElement('p');
+            artworkYear.classList.add('artwork-year');
+            artworkYear.textContent = artwork.year;
+
+            artworkOverlay.appendChild(artworkTitle);
+            artworkOverlay.appendChild(artworkYear);
+
+            const artworkImage = document.createElement('div');
+            artworkImage.classList.add('artwork-image');
+            const imgElement = document.createElement('img');
+            imgElement.src = artwork.img;
+            imgElement.alt = `${artwork.title} by Constantin Brâncuși`;
+            artworkImage.appendChild(imgElement);
+
+            artworkItem.appendChild(artworkOverlay);
+            artworkItem.appendChild(artworkImage);
+
+            gallery.appendChild(artworkItem);
+        });
+
+        this.style.display = 'none';
+    });
+</script>
+
+
+</body>
+</html>

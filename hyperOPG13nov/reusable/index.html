@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reusable Aarhus</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f8f8f8;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80vh; /* Adjust height to fill container */
+        font-family: Arial, sans-serif;
+    }
+
+    .text-row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 150px; /* Default width for other text rows */
+    }
+
+    .text-row div {
+        font-weight: bold;
+        color: #2E4C6D;
+        font-size: calc(5vh + 2vw); /* Adjust as needed for responsiveness */
+        line-height: 0.01;
+        text-align: center;
+        width: 100vw; /* Ensures each line fills the container evenly */
+    }
+
+    .use-row {
+        max-width: 130px; /* Adjust the width specifically for "USE" */
+        max-inline-size: 100%; /* Ensures "USE" has the same width as other rows */
+    }
+
+    .city {
+        font-size: calc(1.5vh + 1.5vw);
+        margin-top: 1rem;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="text-container">
+    <div class="text-row"><div>RE</div></div>
+    <div class="text-row use-row"><div>USE</div></div> <!-- "USE" with custom width -->
+    <div class="text-row"><div>AB</div></div>
+    <div class="text-row"><div>LE</div></div>
+    <div class="city">AARHUS</div>
+</div>
+
+</body>
+</html>

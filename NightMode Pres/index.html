@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <!-- Starry sky container -->
+      <div class="stars">
+        <!-- Generated stars  JS -->
+      </div>
+      <div class="content">
+        <!-- dark mode toggle button -->
+        <button
+          id="toggle-dark-mode"
+          aria-pressed="false"
+          title="Toggle Dark Mode"
+        >
+          <span class="sun-moon-toggle">
+            <span class="sun"></span>
+            <span class="moon">
+              <span class="crater"></span>
+              <span class="crater"></span>
+              <span class="crater"></span>
+            </span>
+          </span>
+        </button>
+
+        <h1>Explore the Power of Dark Mode</h1>
+        <p>Highlighting top use cases where dark mode shines.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="category">
+        <h2>Typefonts Catalogue</h2>
+        <ul>
+          <li>
+            <a href="https://foundry.basement.studio/" target="_blank"
+              >Basement Studio</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="category">
+        <h2>Web Developers & Creatives</h2>
+        <ul>
+          <li>
+            <a href="https://www.lovebloodcreative.com/" target="_blank"
+              >Love Blood Creative</a
+            >
+          </li>
+          <li>
+            <a href="https://kyler.design/" target="_blank">Kyler Design</a>
+          </li>
+          <li>
+            <a href="https://www.steve-edge.com/" target="_blank"
+              >Steve Edge Design</a
+            >
+          </li>
+          <li>
+            <a href="https://www.giuligartner.com/" target="_blank"
+              >Giuli Gartner</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="category">
+        <h2>Finance</h2>
+        <ul>
+          <li>
+            <a href="https://joinclyde.com/" target="_blank">Join Clyde</a>
+          </li>
+          <li>
+            <a href="https://copilot.money/" target="_blank">Copilot Money</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="category">
+        <h2>Productivity</h2>
+        <ul>
+          <li><a href="https://linear.app/" target="_blank">Linear</a></li>
+          <li>
+            <a href="https://tailwindcss.com/docs/dark-mode" target="_blank"
+              >Tailwind CSS</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Dark Mode Showcase</p>
+    </footer>
+
+    <script>
+      // Generate stars dynamically
+      const starsContainer = document.querySelector(".stars");
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement("div");
+        star.classList.add("star");
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.animationDelay = `${Math.random() * 5}s`;
+        starsContainer.appendChild(star);
+      }
+    </script>
+    <script src="stars.js"></script>
+  </body>
+</html>

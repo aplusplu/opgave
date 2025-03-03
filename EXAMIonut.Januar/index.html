@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boligbladet.dk</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Quicksand:wght@400;700&display=swap">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/logo/logo-boligbladet-707070.png" alt="Boligbladet Logo">
+        </div>
+        <nav class="nav-menu">
+            <a href="#gallery">INSPIRATION</a>
+            <a href="#article">ARTIKLER</a>
+            <a href="#subscribe">ABONNEMENT</a>
+        </nav>
+        <button class="burger-menu">☰</button>
+    </header>
+
+    <!-- HeroSec -->
+    <section class="hero-slider">
+        <div class="slide">
+            <img src="assets/images/slider1.jpg" alt="Living Room Design">
+            <div class="hero-text">
+                <h1>Dit foretrukne online boligmagasin</h1>
+                <a href="https://web-mcdm.dk" class="btn-pink"><span>Læs Mere</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GalSec -->
+    <section class="gallery" id="gallery">
+        <h2>Søger du <p>inspiration til boligindretning?</p></h2>
+        <div class="gallery-grid">
+            <figure>
+                <img src="assets/images/kitchen.jpg" alt="Køkkenet">
+                <figcaption>KØKKENET</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/bathroom.jpg" alt="Badeværelset">
+                <figcaption>BADEVÆRELSET</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/livingroom.jpg" alt="Stuen">
+                <figcaption>STUEN</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/garden.jpg" alt="Haven">
+                <figcaption>HAVEN</figcaption>
+            </figure>
+        </div>
+        <a href="https://web-mcdm.dk" class="btn-gold"><span>Se Alle Rum</span></a>
+    </section>
+
+    <!-- ArtSec -->
+    <section class="article" id="article">
+        <div class="article-content">
+            <img src="assets/images/article.jpg" alt="Article Image">
+            <div class="article-text-overlay">
+                <p>Ugens mest læste</p>
+                <h3>“Thomas var mest til neutrale farver, men pludselig er en farve vokset på ham...”</h3>
+                <a href="https://web-mcdm.dk" class="btn-pink"><span>Læs Artiklen Her</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SubsSec -->
+    <section class="subscribe" id="subscribe">
+        <div class="subscribe-container">
+            <div class="subscribe-text">
+                <h2>Abonner på vores online magasin</h2>
+                <p>Og spar op til 1.379 kr</p>
+                <p>Nar du udfylder formularen, får du fakturaen tilsendt på mail. Husk at tjekke dit spamfilter!</p>
+            </div>
+            <form>
+                <label for="name">Fulde Navn?</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="months">Antal måneder</label>
+                <select id="months" name="months" required>
+                    <option value="3">3 måneder</option>
+                    <option value="6">6 måneder</option>
+                    <option value="12">12 måneder</option>
+                </select>
+                <button type="submit" class="btn-gold"><span>Køb Abonnement</span></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FooterSec -->
+    <footer>
+        <div class="footer-section left">
+            <h3>KONTAKT OS</h3>
+            <p>TELEFON: <P>+45 25 34 76 78</P></p>
+            <p>EMAIL: <P>info@info.dk</P></p>
+        </div>
+
+        <div class="footer-section center">
+            <img src="assets/logo/logo-boligbladet-white.png" alt="Boligbladet Logo">
+            <div class="social-icons">
+                <a href="https://web-mcdm.dk"><img src="assets/icons/icon-facebook.svg" alt="Facebook"></a>
+                <a href="https://web-mcdm.dk"><img src="assets/icons/icon-instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer-section right">
+            <h3>INFORMATION</h3>
+            <a href="https://web-mcdm.dk">Abonnementer</a>
+            <a href="https://web-mcdm.dk"><p>Nyhedsbrev</p></a>
+            <a href="https://web-mcdm.dk">Annoncering</a>
+        </div>
+    </footer>
+</body>
+</html>
