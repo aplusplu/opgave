@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmatrend - Investering i Sundhedsindustrien</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Herp -->
+    <header id="Hero">
+        <img src="/IonutBeluOpgaveFinal/media/logo.png" alt="Firma Logo" class="company-logo">
+        <img src="/IonutBeluOpgaveFinal/media/hero.png" alt="Investering Sundhedsindustrien" class="hero-image">
+    </header>
+
+    <!-- MobiMenu -->
+    <nav>
+        <button id="burgerButton" class="burger-button">☰</button>
+        <ul id="menuItems" class="menuitems">
+            <li><a href="#Hero">Hjem</a></li>
+            <li><a href="#Overskrift">Hvorfor Investere</a></li>
+            <li><a href="#Gallery">Galleri</a></li>
+            <li><a href="#Contact">Kontakt</a></li>
+            <span class="close-menu">X</span>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Overskrift -->
+        <section id="Overskrift">
+            <h2>Hvorfor Investere</h2>
+            <p>Opdag, hvordan investering i sundhedsindustrien kan skabe en fremtid for både profit og innovation. Ved at vælge os, får du adgang til daglige investeringsråd via vores Discord-server – en verden af eksperter og banebrydende muligheder, der giver dig de bedste chancer for at se din kapital vokse.</p>
+            <button id="learnMoreButton" class="open-modal">Læs Mere</button>
+        </section>
+
+        <!-- Gallery -->
+        <section id="Gallery">
+            <h2>Galleri</h2>
+            <div class="gallery">
+                <img src="https://picsum.photos/1920/1080?random=1" alt="Galleri Billede 1">
+                <img src="https://picsum.photos/1920/1080?random=2" alt="Galleri Billede 2">
+                <img src="https://picsum.photos/1920/1080?random=3" alt="Galleri Billede 3">
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="Contact">
+            <h2>Kontakt Os</h2>
+            <p>Bliv en del af vores investeringsnetværk for eksklusive muligheder.</p>
+            <button id="contactButton" class="open-modal">Kontakt Os</button>
+        </section>
+    </main>
+
+    <!-- Learn More MD -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Placeholder for dynamically changing modal content -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
